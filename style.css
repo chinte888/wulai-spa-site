@@ -286,3 +286,8 @@ footer{background:var(--stone-deep);padding:80px 8% 50px;}
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
   font-size:11px;letter-spacing:.2em;color:#A39C86;
 }
+
+/* ---------- Photos ---------- */
+.hero{background-image:url('images/男湯_內朝外_1.jpg');background-size:cover;background-position:center;}
+.split-img.photo{background-image:var(--photo);background-size:cover;background-position:center;}
+.split-img.photo .ripple{display:none;}
