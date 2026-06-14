@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: chinte888/wulai-spa-site
+  branch: main
+  base_url: https://wulai-cms-auth.chinte880401jerry.workers.dev
+  auth_endpoint: auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "最新消息"
+    label_singular: "消息"
+    files:
+      - name: "news_list"
+        label: "消息列表"
+        file: "content/news.json"
+        fields:
+          - label: "消息列表"
+            name: "items"
+            widget: "list"
+            label_singular: "一則消息"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - {label: "日期", name: "date", widget: "date", format: "YYYY-MM-DD"}
+              - {label: "標題", name: "title", widget: "string"}
+              - {label: "內容", name: "body", widget: "text"}
