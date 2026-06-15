@@ -390,4 +390,8 @@ footer{background:var(--stone-deep);padding:80px 8% 50px;}
     font-size:clamp(14px, 5vw, 22px);
     letter-spacing:.2em;
   }
+  .cta .line{
+    font-size:clamp(16px, 4.5vw, 20px);
+    letter-spacing:.15em;
+  }
 }
