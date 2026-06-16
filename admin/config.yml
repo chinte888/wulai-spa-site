@@ -2,7 +2,7 @@ backend:
   name: github
   repo: chinte888/wulai-spa-site
   branch: main
-  base_url: https://wulai-cms-auth.chinte880401jerry.workers.dev
+  base_url: https://wulai-spa-site.pages.dev/
   auth_endpoint: auth
 
 media_folder: "images/uploads"
