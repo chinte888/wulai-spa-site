@@ -552,19 +552,24 @@ body.nav-open .logo {
     padding: 12px 0;
   }
   .lang-dropdown {
-    position: static;
-    width: 100%;
-    box-shadow: none;
-    border: none;
-    background: rgba(0,0,0,0.15);
-    margin-top: 4px;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    display: none;
+      z-index: 1100;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      margin-top: 4px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
+    -webkit-overflow-scrolling: touch;
+      max-height: 250px;
+      overflow-y: auto;
   }
   .lang-dropdown.open-mobile {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   .lang-item {
     text-align: center;
