@@ -23,6 +23,12 @@ collections:
             label_singular: "一則消息"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-              - {label: "日期", name: "date", widget: "string"}
-              - {label: "標題", name: "title", widget: "string"}
-              - {label: "內容", name: "body", widget: "text"}
+              - {label: "日期", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+              - {label: "標題 (中)", name: "title", widget: "string"}
+              - {label: "標題 (英)", name: "title_en", widget: "string", required: false}
+              - {label: "標題 (日)", name: "title_ja", widget: "string", required: false}
+              - {label: "標題 (韓)", name: "title_ko", widget: "string", required: false}
+              - {label: "內容 (中)", name: "body", widget: "text"}
+              - {label: "內容 (英)", name: "body_en", widget: "text", required: false}
+              - {label: "內容 (日)", name: "body_ja", widget: "text", required: false}
+              - {label: "內容 (韓)", name: "body_ko", widget: "text", required: false}
