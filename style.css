@@ -65,12 +65,16 @@ nav.main-nav a.line-btn:hover{background:#fff;color:var(--moss-deep);}
 .nav-toggle{display:none;}
 @media (max-width:860px){
   nav.main-nav{
-    position:fixed;top:0;right:0;height:100vh;width:240px;
+    position:fixed;top:0;right:0;
+    height:100%;
+    height:100dvh;
+    width:240px;
     background:var(--moss-deep);flex-direction:column;justify-content:flex-start;
-    align-items:flex-start;gap:24px;padding:80px 40px 40px 40px;
+    align-items:flex-start;gap:24px;padding:80px 40px 120px 40px;
     transform:translateX(100%);transition:transform .3s;
-    overflow-y:auto;
+    overflow-y:scroll;
     -webkit-overflow-scrolling:touch;
+    z-index:1000;
   }
   nav.main-nav.open{transform:translateX(0);}
   .nav-toggle{
@@ -451,6 +455,8 @@ footer{background:var(--stone-deep);padding:80px 8% 50px;}
 }
 body.nav-open {
   overflow: hidden;
+  height: 100%;
+  height: 100dvh;
 }
 body.nav-open .logo {
   opacity: 0;
@@ -578,48 +584,48 @@ body.nav-open .logo {
 }
 
 /* ==========================================================================
-   English (en) Layout & Typography Overrides
+   Non-Chinese (en, ja, ko) Layout & Typography Overrides
    ========================================================================== */
-html[lang="en"] body {
+html[lang="en"] body, html[lang="ja"] body, html[lang="ko"] body {
   line-height: 1.6;
 }
-html[lang="en"] .logo {
+html[lang="en"] .logo, html[lang="ja"] .logo, html[lang="ko"] .logo {
   letter-spacing: 0.15em;
   font-size: 14px;
 }
-html[lang="en"] nav.main-nav {
+html[lang="en"] nav.main-nav, html[lang="ja"] nav.main-nav, html[lang="ko"] nav.main-nav {
   gap: 18px;
 }
-html[lang="en"] nav.main-nav a {
+html[lang="en"] nav.main-nav a, html[lang="ja"] nav.main-nav a, html[lang="ko"] nav.main-nav a {
   letter-spacing: 0.05em;
 }
-html[lang="en"] nav.main-nav a.book {
+html[lang="en"] nav.main-nav a.book, html[lang="ja"] nav.main-nav a.book, html[lang="ko"] nav.main-nav a.book {
   padding: 8px 16px;
 }
-html[lang="en"] nav.main-nav a.line-btn {
+html[lang="en"] nav.main-nav a.line-btn, html[lang="ja"] nav.main-nav a.line-btn, html[lang="ko"] nav.main-nav a.line-btn {
   padding: 8px 12px;
 }
-html[lang="en"] .hero-text .line {
+html[lang="en"] .hero-text .line, html[lang="ja"] .hero-text .line, html[lang="ko"] .hero-text .line {
   letter-spacing: 0.08em;
   font-size: clamp(16px, 2.8vw, 28px);
   line-height: 1.5;
   margin-bottom: 0.8em;
 }
-html[lang="en"] .intro h2 {
+html[lang="en"] .intro h2, html[lang="ja"] .intro h2, html[lang="ko"] .intro h2 {
   font-size: clamp(16px, 1.8vw, 22px);
   line-height: 1.8;
   letter-spacing: 0.02em;
   word-break: normal;
 }
-html[lang="en"] .split-text h2 {
+html[lang="en"] .split-text h2, html[lang="ja"] .split-text h2, html[lang="ko"] .split-text h2 {
   letter-spacing: 0.05em;
   line-height: 1.4;
   font-size: clamp(20px, 2.5vw, 26px);
 }
-html[lang="en"] .split-text p {
+html[lang="en"] .split-text p, html[lang="ja"] .split-text p, html[lang="ko"] .split-text p {
   line-height: 1.6;
 }
-html[lang="en"] .service-name {
+html[lang="en"] .service-name, html[lang="ja"] .service-name, html[lang="ko"] .service-name {
   letter-spacing: 0.08em;
   font-size: clamp(16px, 2.2vw, 22px);
   line-height: 1.4;
@@ -627,33 +633,33 @@ html[lang="en"] .service-name {
 html[lang="en"] .service-name span {
   display: none; /* Hide redundant PUBLIC BATH sub-label on English page */
 }
-html[lang="en"] .news-band-label {
+html[lang="en"] .news-band-label, html[lang="ja"] .news-band-label, html[lang="ko"] .news-band-label {
   letter-spacing: 0.15em;
 }
-html[lang="en"] .news-band-title {
+html[lang="en"] .news-band-title, html[lang="ja"] .news-band-title, html[lang="ko"] .news-band-title {
   letter-spacing: 0.02em;
   line-height: 1.5;
   font-size: 13px;
   word-break: normal;
 }
-html[lang="en"] .cta .line {
+html[lang="en"] .cta .line, html[lang="ja"] .cta .line, html[lang="ko"] .cta .line {
   letter-spacing: 0.1em;
   font-size: clamp(16px, 2.4vw, 22px);
   line-height: 1.5;
 }
-html[lang="en"] .footer-links {
+html[lang="en"] .footer-links, html[lang="ja"] .footer-links, html[lang="ko"] .footer-links {
   gap: 20px 24px;
 }
-html[lang="en"] .footer-links a {
+html[lang="en"] .footer-links a, html[lang="ja"] .footer-links a, html[lang="ko"] .footer-links a {
   letter-spacing: 0.08em;
 }
-html[lang="en"] .footer-contact {
+html[lang="en"] .footer-contact, html[lang="ja"] .footer-contact, html[lang="ko"] .footer-contact {
   line-height: 1.6;
 }
-html[lang="en"] .price-table th {
+html[lang="en"] .price-table th, html[lang="ja"] .price-table th, html[lang="ko"] .price-table th {
   letter-spacing: 0.05em;
 }
-html[lang="en"] .price-table td {
+html[lang="en"] .price-table td, html[lang="ja"] .price-table td, html[lang="ko"] .price-table td {
   letter-spacing: 0.02em;
   line-height: 1.4;
 }
