@@ -79,7 +79,8 @@ nav.main-nav a.line-btn:hover{background:#fff;color:var(--moss-deep);}
   nav.main-nav.open{transform:translateX(0);}
   .nav-toggle{
     display:block;color:#fff;font-size:12px;letter-spacing:.3em;cursor:pointer;
-    z-index:101;
+    position:relative;
+    z-index:1010;
   }
 }
 
