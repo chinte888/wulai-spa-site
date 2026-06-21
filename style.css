@@ -19,6 +19,7 @@ body{
 .serif{font-family:'Noto Serif TC', serif;}
 a{text-decoration:none;color:inherit;}
 img{max-width:100%;display:block;}
+p:empty{display:none;}
 
 /* ---------- Nav ---------- */
 header {
